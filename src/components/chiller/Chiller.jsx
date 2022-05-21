@@ -6,7 +6,9 @@ import "./ChillerStyles.css";
 const Chiller = () => {
   return (
     <div className="chiller-container container">
-      <div className="left-img">
+      <div className="left-img" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <img
           className="chiller-img"
           src={chillerImage}

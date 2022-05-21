@@ -1,0 +1,29 @@
+.about_hero {
+    padding: 10rem;
+    text-align: center;
+}
+
+.about_hero_contents {
+    width: 60%;
+    margin: 3rem auto;
+}
+
+.about_hero_contents small {
+    font-size: 12px;
+}
+
+.about_hero_contents h3 {
+    margin-top: 1rem;
+    font-size: 45px;
+    font-weight: 200;
+}
+
+.about_hero_contents h3 span{
+    font-weight: 700;
+}
+
+.about_hero_contents p{
+    margin-top: 1rem;
+    font-size: 16px;
+    font-weight: 200;
+}
