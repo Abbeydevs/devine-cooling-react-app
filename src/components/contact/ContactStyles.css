@@ -1,0 +1,110 @@
+.contact {
+    padding: 9rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.left-lead {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.left-lead h2.lead-title {
+    font-size: 45px;
+    font-weight: 200;
+}
+
+.address,
+.mail,
+.call,
+.time {
+    margin-top: 2rem;
+}
+
+.address .locationIcon,
+.mail .mailIcon,
+.call .callIcon,
+.time .timeIcon {
+    color: var(--primary-text-color);
+    font-size: 30px;
+}
+
+.address p,
+.mail p,
+.call p,
+.time p {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.lady_img {
+    width: 100%;
+}
+
+.lady_img img {
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    right: 0;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 800px) {
+    .container {
+        padding: 3rem;
+    }
+
+    .left-lead h2.lead-title {
+        font-size: 30px;
+    }
+
+    .address .locationIcon,
+    .mail .mailIcon,
+    .call .callIcon,
+    .time .timeIcon {
+        font-size: 20px;
+    }
+
+    .address p,
+    .mail p,
+    .call p,
+    .time p {
+        font-size: 18px;
+        font-weight: 200;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 3rem;
+    }
+
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lady_img img {
+        width: 100%;
+        position: unset;
+    } 
+
+    .left-lead h2.lead-title {
+        font-size: 30px;
+    }
+
+    .address .locationIcon,
+    .mail .mailIcon,
+    .call .callIcon,
+    .time .timeIcon {
+        font-size: 20px;
+    }
+
+    .address p,
+    .mail p,
+    .call p,
+    .time p {
+        font-size: 18px;
+        font-weight: 200;
+    }
+}

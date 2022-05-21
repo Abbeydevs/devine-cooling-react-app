@@ -1,0 +1,79 @@
+.service-container {
+    padding: 5rem;
+}
+
+.leading-text {
+    font-size: 35px;
+}
+
+.service-columns {
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+
+.column {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 5px 5px 30px #00000012;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.service-columns .sales h4,
+.service-columns .installation h4,
+.service-columns .consultancy h4,
+.service-columns .design h4 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.service-columns .sales p,
+.service-columns .installation p,
+.service-columns .consultancy p,
+.service-columns .design p {
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 15px;
+}
+
+.col-btn {
+    width: 40%;
+    padding: 15px;
+    margin-top: 2rem !important;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 1024px) {
+    .service-columns {  
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .col-btn {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .service-container {
+        text-align: center;
+    }
+
+    .container {
+        padding: 3rem;
+    }
+
+    .service-columns {  
+        grid-template-columns: 1fr;
+    }
+
+    .col-btn {
+        width: 70%;
+        margin: auto;
+    }
+}

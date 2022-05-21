@@ -1,0 +1,165 @@
+.footer {
+    background-color: var(--footer-bg);
+    padding-top: 7rem;
+}
+
+.footer-contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-leads h3.footer-title {
+    font-size: 35px;
+    color: #fff;
+}
+
+.footer-leads small {
+    font-size: 18px;
+    color: var(--footer-texts);
+    font-weight: 200;
+}
+
+.socialIcons {
+    margin-top: 3rem;
+}
+
+.socialIcons .icons {
+    font-size: 22px;
+    margin: 0.8rem 0.7rem 0 0;
+    color: var(--divider);
+}
+
+.socialIcons .icons:hover {
+    color: var(--footer-texts);
+}
+
+p.follow-text {
+    color: var(--footer-texts);
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.footer-links {
+    margin-top: 4rem;
+}
+
+.footer-links ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links ul li a {
+    color: var(--divider);
+}
+
+.footer-links ul li a:hover {
+    color: var(--body-bg-color);
+}
+
+.subscription {
+    width: 40%;
+}
+
+.subscription h4 {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.subscription p {
+    font-size: 18px;
+    color: var(--footer-texts);
+    font-weight: 200;
+}
+
+.subscription form {
+    margin-top: 1.5rem;
+}
+
+.subscription form input {
+    width: 100%;
+    padding: 18px 20px;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 30px;
+}
+
+::placeholder {
+    font-size: 16px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.sub-btn {
+    width: 40%;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 1rem;
+    padding: 12px;
+}
+
+.copyright {
+    color: #666666;
+    padding: 5rem 0 2rem;
+    text-align: center;
+}
+
+.copyright a {
+    color: var(--divider);
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 912px) {
+    .sub-btn {
+        width: 60% !important;
+        font-size: 14px !important;
+        margin-top: 0.6rem !important;
+        padding: 16px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-contents {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socialIcons {
+        margin-top: 2rem;
+    }
+
+    .footer-links {
+        margin: 2rem auto;
+        text-align: center;
+    }
+
+    .footer-links ul {
+        gap: 0;
+    }
+
+    .footer-links ul li {
+        margin: auto;
+    }
+
+    .subscription {
+        width: 100%;
+        text-align: center;
+        margin: 3rem auto;
+    }
+
+    .subscription form input {
+        width: 80%;
+    }
+
+    .sub-btn {
+        width: 80% !important;
+        margin: 1rem auto !important;
+    }
+}   

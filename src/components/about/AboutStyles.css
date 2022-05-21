@@ -1,0 +1,76 @@
+.about-container {
+    padding: 7rem;
+    text-align: center;
+    background-image: url(../../assets/about_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-content h2.about-title {
+    font-size: 40px;
+    color: var(--body-bg-color);
+}
+
+.about-content p.about-desc {
+    font-size: 18px;
+    margin-top: 2rem;
+    color: var(--body-bg-color);
+    font-weight: 300;
+}
+
+.about-container .about_btn {
+    width: 25%;
+    background: var(--btn-linear-color);
+    margin: 3rem auto 0;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 920px) {
+    .about-container .about_btn {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-content {
+        padding: 2rem 0 0;
+    }
+
+    .about-content h2.about-title {
+        font-size: 30px;
+    }
+
+    .about-content p.about-desc {
+        font-size: 14px;
+        margin-top: 1rem;
+    }
+
+    .about-container .about_btn {
+        width: 50%;
+        margin: 2rem auto 1rem;
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .about-content h2.about-title {
+        font-size: 20px;
+    }
+
+    .about-content p.about-desc {
+        font-size: 12px;
+    }
+
+    .about-container .about_btn {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+
+    .about-container .about_btn {
+        width: 100%;
+    }
+}

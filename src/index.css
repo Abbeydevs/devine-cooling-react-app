@@ -1,13 +1,76 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--body-bg-color);
+}
+
+.container {
+  padding: 0 5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #12048C;
+}
+
+.nav-open-icon {
+  color: var(--primary-text-color);
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.closeNav {
+  color: #FFF;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--primary-text-color);
+}
+
+p {
+  color: var(--secondary-text-color);
+}
+
+:root {
+  --btn-bg-color: #12048C;
+  --btn-linear-color: linear-gradient(0.25turn, #150885, #1B04DE);
+  --btn-border: #12048C;
+  --primary-text-color: #12048C;
+  --secondary-text-color: #3C3C3C;
+  --body-bg-color: #E4F9FF;
+  --footer-bg: #3C3C3C;
+  --divider: #ececec;
+  --footer-texts: #dedede
+}
+
+.btn {
+  color: #FFF;
+  background-color: var(--btn-bg-color);
+  border-radius: 31.5px;
+  padding: 15px;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-linear {
+  background: var(--btn-linear-color);
+}
+
+.btn-transparent {
+  border-radius: 31.5px;
+  border: 1px solid var(--btn-border);
+  color: var(--primary-text-color);
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
 }

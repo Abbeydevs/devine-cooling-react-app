@@ -1,0 +1,87 @@
+.project-container {
+    background-color: #fff;
+    padding: 8rem;
+}
+
+.divider {
+    height: 2px;
+    width: 100%;
+    background-color: var(--divider);
+}
+
+.project-container .lead-texts {
+    margin-top: 5rem;
+}
+
+.lead-texts h2.lead-title {
+    font-size: 35px;
+    width: 25%;
+    line-height: 2.8rem;
+}
+
+.lead-texts p.lead-desc {
+    font-size: 25px;
+    width: 100%;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.project-container .carousel {
+    margin-top: 2rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--primary-text-color);
+}
+
+.slider1 {
+    position: relative;
+    text-align: center;
+}
+
+.company_name {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-container .carousel .slider1_img {
+    width: 100%;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 800px) { 
+    .container {
+        padding: 2rem;
+    }
+
+    .project-container {
+        text-align: center;
+    }
+
+    .project-container .lead-texts {
+        margin: 7rem auto 4rem;
+    }
+
+    .lead-texts h2.lead-title {
+        margin: auto;
+        width: 100%;
+    }
+
+    .company_name {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .company_name {
+        font-size: 14px;
+    }
+}
