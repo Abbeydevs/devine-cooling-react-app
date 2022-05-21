@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 
 import Home from './routes/Home';
-import About_us from "./routes/About_us";
+import About_Us from "./routes/About_Us";
 import Products from "./routes/Products";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about_us" element={<About_us />} />
+        <Route path="/about_Us" element={<About_Us />} />
         <Route path="/products" element={<Products />} />
       </Routes>
     </>
