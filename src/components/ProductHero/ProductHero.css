@@ -1,7 +1,7 @@
 .product-hero {
     padding: 10rem;
     text-align: center;
-    background-image: url(../../assets/product-bg.png);
+    background-image: url(../../assets/product_bg.jpeg);
 }
 
 .productHero-contents {
@@ -11,21 +11,21 @@
 }
 
 .productHero-contents h3 {
-    color: #fff;
+    color: var(--primary-text-color);
     font-size: 45px;
     font-weight: 700;
 }
 
 .productHero-contents p {
-    color: #ececec;
+    /* color: #ececec; */
     font-size: 18px;
     font-weight: 200;
     margin-top: 1rem;
 }
 
 .productHero-contents .btn-transparent {
-    color: #ececec;
-    border: 1px solid #fff !important;
+    /* color: #ececec; */
+    border: 1px solid var(--primary-text-color) !important;
     font-size: 18px;
     font-weight: 200;
     margin: 2rem auto;
@@ -34,6 +34,45 @@
 }
 
 .productHero-contents .btn-transparent:hover {
-    color: var(--primary-text-color);
-    background-color: #fff;
+    color: #fff;
+    background-color:  var(--primary-text-color);
+}
+
+@media screen and (max-width: 1024px) {
+    .productHero-contents {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .productHero-contents h3 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .productHero-contents h3 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .productHero-contents h3 {
+        font-size: 25px;
+    }
+
+    .productHero-contents p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .productHero-contents .btn-transparent {
+        width: 80%;
+    }
 }

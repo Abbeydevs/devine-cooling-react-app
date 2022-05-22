@@ -3,7 +3,7 @@ import { MdFacebook } from "react-icons/md";
 import { FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { ExternalLink } from 'react-external-link';
+import { ExternalLink } from "react-external-link";
 
 import "./FooterStyles.css";
 
@@ -16,6 +16,7 @@ const Footer = () => {
         <div className="footer-leads">
           <h3 className="footer-title">Devine Cooling</h3>
           <small>Customer Satisfaction is our priority</small>
+
           {/* This is the social icons for the company */}
           <div className="socialIcons">
             <p className="follow-text">Follow us</p>
@@ -29,44 +30,34 @@ const Footer = () => {
               <AiFillInstagram className="icons" />
             </ExternalLink>
           </div>
-
-          <div className="footer-links">
-            <ul>
-              <li>
-                <Link to="/faq">FAQ</Link>
-              </li>
-              <li>
-                <Link to="/terms">Terms</Link>
-              </li>
-              <li>
-                <Link to="/privacy">Privacy Policy</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-            </ul>
-          </div>
         </div>
 
-        <div className="subscription">
-          <h4>Subscribe</h4>
-          <p>Subscribe to our newsletter today</p>
-          <form action="" method="POST">
-            <input
-              type="email"
-              name="email-address"
-              placeholder="Email Address"
-            />
-            <div className="btn sub-btn">Subscribe</div>
-          </form>
+        <div className="footer-links">
+          <ul>
+            <li>
+              <Link to="/faq">FAQ</Link>
+            </li>
+            <li>
+              <Link to="/terms">Terms</Link>
+            </li>
+            <li>
+              <Link to="/privacy">Privacy Policy</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul>
         </div>
       </div>
-      <p className="copyright"> &copy; {copyrightTime} Devine Cooling. All rights reserved.
-        Website developed by 
+      
+      <p className="copyright">
+        {" "}
+        &copy; {copyrightTime} Devine Cooling. All rights reserved. Website
+        developed by
         <ExternalLink href="https://instagram.com/abbeydev_">
-              <span> Abbeydev</span>
-            </ExternalLink>
-        </p>
+          <span> Abbeydev</span>
+        </ExternalLink>
+      </p>
     </footer>
   );
 };

@@ -15,7 +15,7 @@ const About = () => {
           top priority.{" "}
         </p>
         <Link to='/about'>
-          <div className="btn about_btn">Learn more</div>
+          <div className="btn about_btn" data-aos="zoom-in">Learn more</div>
         </Link>
       </div>
     </div>

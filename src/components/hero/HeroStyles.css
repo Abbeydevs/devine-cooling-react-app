@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    background-image: url(../../assets/hero_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .leading-texts {
@@ -120,7 +123,7 @@
     }
     
     .hero-container {
-        padding-top: 13rem;
+        padding-top: 12rem !important;
     }
 
     .leading-texts {

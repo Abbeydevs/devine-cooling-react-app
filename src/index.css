@@ -23,7 +23,7 @@ a {
 
 .nav-open-icon {
   color: var(--primary-text-color);
-  font-size: 40px;
+  font-size: 0px;
   cursor: pointer;
 }
 

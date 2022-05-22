@@ -1,22 +1,36 @@
-import React, {useState} from "react";
-import { MdMenu } from "react-icons/md";
-import {MdClose} from "react-icons/md"
+import React, { useState } from "react";
+// import { MdMenu } from "react-icons/md";
+// import {MdClose} from "react-icons/md"
 import { Link } from "react-router-dom";
-import companyLogo from '../../assets/logo.png';
+import companyLogo from "../../assets/logo.png";
+import Hamburger from "hamburger-react";
 
 import "./NavbarStyles.css";
 
 const Navbar = () => {
-    const[click, setClick] = useState(false)
-    const handleNavClick = () => setClick(!click)
 
+  // Settings mobile nav
+  const [click, setClick] = useState(false);
+  const handleNavClick = () => setClick(!click);
+
+  // Change nav color when scrolling
+  const [color, setColor] = useState(false)
+  const changeColor = () => {
+    if(window.scrollY > 90) {
+      setColor(true)
+    } else {
+      setColor(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeColor)
 
   return (
-    <div className="header container">
+    <div className={color ? "header header-scroll" : "header"}>
       <Link to="/">
         <img className="logo" src={companyLogo} alt="Company logo" />
       </Link>
-      <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+      <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -32,8 +46,7 @@ const Navbar = () => {
       </ul>
       {/* Navbar open icon */}
       <div className="nav-open-icon" onClick={handleNavClick}>
-      {click ? (<MdClose style={{color: '#12048c'}} />) : (<MdMenu />)}
-        
+        {click ? <Hamburger size={25} /> : <Hamburger size={25} />}
       </div>
     </div>
   );
