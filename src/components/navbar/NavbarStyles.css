@@ -113,6 +113,15 @@
 
 @media screen and (max-width: 420px){
 
+    .container {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .header {
+        height: 10px !important;
+    }
+
     .nav-menu {
         height: 80vh;
     }

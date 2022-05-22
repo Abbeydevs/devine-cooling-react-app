@@ -29,7 +29,7 @@ const Hero = () => {
         <img
           className="hero-leading-img"
           src={heroLeadImage}
-          alt="This is the hero image"
+          alt="This is the hero"
         />
       </div>
     </div>

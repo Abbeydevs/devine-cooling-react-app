@@ -1,13 +1,13 @@
 import React from 'react'
 import Footer from '../components/footer/Footer'
 import Navbar from '../components/navbar/Navbar'
-import Product_hero from '../components/ProductHero/Product_hero'
+import ProductHero from '../components/ProductHero/ProductHero'
 
 const Products = () => {
   return (
     <div>
         <Navbar />
-        <Product_hero />
+        <ProductHero />
         <Footer />
     </div>
   )

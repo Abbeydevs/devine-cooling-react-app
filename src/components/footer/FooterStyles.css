@@ -14,7 +14,7 @@
 }
 
 .footer-leads small {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--footer-texts);
     font-weight: 200;
 }
@@ -61,13 +61,13 @@ p.follow-text {
 }
 
 .subscription h4 {
-    font-size: 35px;
+    font-size: 28px;
     color: #fff;
     font-weight: 200;
 }
 
 .subscription p {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--footer-texts);
     font-weight: 200;
 }
@@ -124,11 +124,17 @@ p.follow-text {
 
     .footer {
         text-align: center;
+        /* padding-top: 5rem !important; */
     }
 
     .footer-contents {
         display: flex;
         flex-direction: column;
+    }
+
+    .footer-title {
+        font-size: 25px !important;
+        margin-top: 2rem;
     }
 
     .socialIcons {
@@ -155,11 +161,19 @@ p.follow-text {
     }
 
     .subscription form input {
-        width: 80%;
+        width: 100%;
     }
 
     .sub-btn {
-        width: 80% !important;
-        margin: 1rem auto !important;
+        width: 100% !important;
+        margin: 1rem auto 0 !important;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .copyright {
+        padding: 1rem 0 0;
     }
 }   

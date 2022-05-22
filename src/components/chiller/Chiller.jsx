@@ -12,7 +12,7 @@ const Chiller = () => {
         <img
           className="chiller-img"
           src={chillerImage}
-          alt="The chiller picture"
+          alt="This is he chiller machine"
         />
       </div>
       <div className="leading-texts">

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import {GrClose} from "react-icons/gr"
+import { MdMenu } from "react-icons/md";
+import {MdClose} from "react-icons/md"
 import { Link } from "react-router-dom";
 import companyLogo from '../../assets/logo.png';
 
@@ -32,7 +32,7 @@ const Navbar = () => {
       </ul>
       {/* Navbar open icon */}
       <div className="nav-open-icon" onClick={handleNavClick}>
-      {click ? (<GrClose style={{color: '#fff'}} />) : (<HiOutlineMenuAlt3 />)}
+      {click ? (<MdClose style={{color: '#12048c'}} />) : (<MdMenu />)}
         
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import firstSliderImage from "../../assets/project-img1.png";
 import secondSliderImage from "../../assets/project-img2.png";
 import thirdSliderImage from "../../assets/project-img3.png";
@@ -62,7 +62,7 @@ const Project = () => {
               <img
                 className="slider1_img"
                 src={image}
-                alt="This is the first slide Image"
+                alt="This is the first slide"
               />
             </SwiperSlide>
           );

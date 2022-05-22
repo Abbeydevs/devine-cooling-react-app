@@ -22,7 +22,7 @@ const Service = () => {
           <p className="btn btn-linear col-btn">Get Quote</p>
         </div>
         <div className="installation column" 
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-duration="3000">
           <h4>Installation</h4>
           <p>
