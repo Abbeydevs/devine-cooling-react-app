@@ -1,6 +1,7 @@
 import React from "react";
 import AboutHero from "../components/aboutHero/AboutHero";
 import Footer from "../components/footer/Footer";
+import Mission from "../components/mission-vision/Mission";
 import Navbar from "../components/navbar/Navbar";
 
 const About_us = () => {
@@ -8,6 +9,7 @@ const About_us = () => {
     <div>
       <Navbar />
       <AboutHero />
+      <Mission />
       <Footer />
     </div>
   );

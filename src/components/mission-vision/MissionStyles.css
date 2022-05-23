@@ -1,0 +1,118 @@
+.mission-vision {
+    padding: 5rem 10rem;
+    background-image: url(../../assets/m_v_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.m-v-contents {
+    display: flex;
+}
+
+.m-v-contents .mission-statements .target-icon,
+.m-v-contents .vision-statements .vision-icon {
+    font-size: 32px;
+    color: var(--primary-text-color);
+    background-color: rgb(151, 255, 255);
+    border-radius: 10px;
+}
+
+.m-v-contents .mission-statements h4,
+.m-v-contents .vision-statements h4 {
+    font-size: 45px;
+    font-weight: 200;
+    line-height: 3.5rem;
+}
+
+.m-v-contents .mission-statements p,
+.m-v-contents .vision-statements p {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.m-v-contents .vision-statements {
+    margin: 8rem 0 0 4rem;
+}
+
+.m-v-contents img {
+    width: 50%;
+}
+
+
+/******************************* RESPONSIVENESS ****************************/
+@media screen and (max-width: 1024px) {
+    .mission-vision {
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .m-v-contents {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .m-v-contents .vision-statements {
+        margin: 8rem 0 4rem;
+    }
+
+    .m-v-contents img {
+        width: 50%;
+        margin: 4rem auto 0;
+    }
+
+    .m-v-contents .mission-statements p,
+    .m-v-contents .vision-statements p {
+        font-size: 21px;
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .m-v-contents .mission-statements .target-icon,
+    .m-v-contents .vision-statements .vision-icon {
+        font-size: 42px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .m-v-contents .mission-statements p,
+    .m-v-contents .vision-statements p {
+        width: 100%;
+    }
+
+    .m-v-contents img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .m-v-contents .mission-statements p,
+    .m-v-contents .vision-statements p {
+        width: 100%;
+    }
+
+    .m-v-contents img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+
+    .mission-vision {
+        padding: 2rem;
+    }
+
+    .m-v-contents .mission-statements h4,
+    .m-v-contents .vision-statements h4 {
+        font-size: 29px;
+    }
+
+    .m-v-contents .mission-statements p,
+    .m-v-contents .vision-statements p {
+        font-size: 16px;
+        font-weight: 200;
+    }
+}

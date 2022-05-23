@@ -27,3 +27,31 @@
     font-size: 16px;
     font-weight: 200;
 }
+
+
+/********************************** RESPONSIVENESS **************************************/
+@media screen and (max-width: 1024px) {
+    .about_hero_contents {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about_hero {
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about_hero {
+        padding: 5rem 2rem;
+    }
+
+    .about_hero_contents h3 {
+        font-size: 30px;
+    }
+
+    .about_hero_contents p{
+        font-size: 12px;
+    }
+}
