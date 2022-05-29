@@ -3,6 +3,7 @@
     background-image: url(../../assets/m_v_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .m-v-contents {

@@ -1,0 +1,73 @@
+.core-values {
+    padding: 7rem 10rem;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    box-shadow: 5px 5px 30px #00000012;
+}
+
+.core-values h2 {
+    font-size: 45px;
+    font-weight: 200;
+}
+
+.cv-cards {
+    width: 100%;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.cv-cards .cards {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px #00000012;
+    transition: .5s ease;
+    border: 1px solid #eee;
+}
+
+.cv-cards .cards:hover {
+    background-color: var(--btn-bg-color);
+    color: #fff !important;
+}
+
+.cv-cards .cards h4 {
+    font-size: 23px;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.cv-cards .cards small {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+
+/*................................... RESPONSIVENESS ........................*/
+@media screen and (max-width: 1024px) {
+    .core-values {
+        padding: 5rem;
+    }
+    .core-values h2 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .core-values {
+        text-align: center;
+    }
+
+    .cv-cards {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .core-values {
+        padding: 5rem 2rem;
+    }
+}
