@@ -1,5 +1,5 @@
 import React from "react";
-import heroLeadImage from "../../assets/hero_img.png";
+import heroLeadImage from "../../assets/hero-imgg.png";
 
 import "./HeroStyles.css";
 
