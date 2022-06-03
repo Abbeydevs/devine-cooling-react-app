@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="hero-container container">
       <div className="leading-texts">
         <h3 className="lead-title">
-          Invest in Coldroom Business with Devine Cooling
+          Buy & Install Coldroom machines with Devine Cooling.
         </h3>
         <p className="lead-desc">
           We are Devine Cooling. We build Cooling machines and install them for
