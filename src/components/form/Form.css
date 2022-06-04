@@ -1,0 +1,142 @@
+.book-us-form {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/form-bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.form_container {
+    background-color: #fff;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 2rem 4rem;
+    text-align: left;
+}
+
+.form_container h3 {
+    padding: 1rem 0 2rem;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.form_container form label {
+    display: block;
+    margin: 0.4rem auto;
+    font-weight: 300;
+    color: #3c3c3c;
+}
+
+.form_container form input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.form_container form .first-row,
+.form_container form .second-row,
+.form_container form .third-row {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.form_container form .service-row,
+.form_container form .add-info {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.form_container form .first-row .f-name,
+.l-name,
+.form_container form .second-row .email,
+.p-num,
+.form_container form .third-row .state,
+.country {
+    width: 50%;
+}
+
+.form_container form .third-row .select-state-dropdown select,
+.form_container form .third-row .select-country-dropdown select,
+.form_container form .service-row .service select {
+    border: none;
+    background: transparent;
+    outline: 0;
+}
+
+.form_container form .third-row .select-state-dropdown,
+.form_container form .third-row .select-country-dropdown,
+.form_container form .service-row .service {
+    padding-right: 10px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+::-webkit-input-placeholder {
+    font-family: poppins, sans-serif;
+    color: #aaa;
+    font-weight: 200;
+}
+
+
+
+/* ---------------RESPONSIVENESS--------------------- */
+@media screen and (max-width: 1024px) {
+    .form_container {
+        padding: 2rem 2.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .form_container {
+        padding: 1.5rem;
+        width: 70%;
+    }
+
+    .form_container h3 {
+        font-size: 18px;
+        padding: 0 0 0.5rem;
+    }
+
+    .form_container form .first-row,
+    .form_container form .second-row,
+    .form_container form .third-row {
+        flex-direction: column;
+    }
+
+    .form_container form .first-row .f-name,
+    .l-name,
+    .form_container form .second-row .email,
+    .p-num,
+    .form_container form .third-row .state,
+    .country {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 400px) {
+        .form_container {
+            width: 80%;
+        }
+
+        .form_container h3 {
+            font-size: 16px;
+        }
+
+        .form_container form label {
+            font-size: 12px;
+        }
+    }
+}
